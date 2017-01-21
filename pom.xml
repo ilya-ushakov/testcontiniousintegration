@@ -92,7 +92,7 @@
                     <configuration>
                         <url>http://doccloud.ru:8080/manager/text</url>
                         <server>TomcatServer</server>
-                        <path>/yourappcontextpath</path>
+                        <path>/testapp</path>
                     </configuration>
                 </plugin>
       <plugin>
