@@ -85,6 +85,16 @@
     <finalName>spring-mvc-asynchronous-basic</finalName>
     <!-- Use Java 1.7 -->
     <plugins>
+<plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>2.2</version>
+                    <configuration>
+                        <url>http://doccloud.ru:8080/manager/text</url>
+                        <server>TomcatServer</server>
+                        <path>/yourappcontextpath</path>
+                    </configuration>
+                </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
