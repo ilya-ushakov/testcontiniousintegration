@@ -83,7 +83,7 @@
  
   <build>
     <finalName>spring-mvc-asynchronous-basic</finalName>
-    <!-- Use Java 1.7 -->
+    <!-- Use Java 1.8 -->
     <plugins>
 <plugin>
                     <groupId>org.apache.tomcat.maven</groupId>
