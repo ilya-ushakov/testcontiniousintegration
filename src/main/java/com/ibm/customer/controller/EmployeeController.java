@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.concurrent.Callable;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/testapp")
 public class EmployeeController {
 
 
-    final  EmployeeService employeeService;
+    private final  EmployeeService employeeService;
 
     @Autowired
     public EmployeeController(EmployeeService employeeService) {
@@ -23,7 +23,7 @@ public class EmployeeController {
     }
 
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/testapp", method = RequestMethod.GET)
     public String listEmployees(ModelMap map)
     {
 //        map.addAttribute("employee", new EmployeeBean("firstName", "LastName"));
