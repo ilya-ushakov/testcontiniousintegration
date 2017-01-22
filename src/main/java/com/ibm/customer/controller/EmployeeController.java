@@ -23,7 +23,7 @@ public class EmployeeController {
     }
 
 
-    @RequestMapping(value = "/testapp", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String listEmployees(ModelMap map)
     {
 //        map.addAttribute("employee", new EmployeeBean("firstName", "LastName"));
