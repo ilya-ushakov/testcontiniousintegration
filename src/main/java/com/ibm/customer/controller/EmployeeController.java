@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.concurrent.Callable;
 
 @Controller
+@RequestMapping("/")
 public class EmployeeController {
 
 
