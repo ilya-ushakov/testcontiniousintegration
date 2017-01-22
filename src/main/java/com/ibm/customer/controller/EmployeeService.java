@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class EmployeeService {
     Logger logger = LoggerFactory.getLogger(EmployeeService.class);
 
-    public EmployeeBean addNewEmployee(EmployeeBean employeeBean) {
+    EmployeeBean addNewEmployee(EmployeeBean employeeBean) {
         System.out.println(" start slow work");
         try {
             Thread.sleep(6000);

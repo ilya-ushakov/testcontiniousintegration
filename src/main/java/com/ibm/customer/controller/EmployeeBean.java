@@ -6,12 +6,12 @@ public class EmployeeBean {
 
     private String lastname;
 
-    public EmployeeBean(String firstname, String lastname) {
+    EmployeeBean(String firstname, String lastname) {
         this.firstname = firstname;
         this.lastname = lastname;
     }
 
-    public EmployeeBean() {
+    EmployeeBean() {
 
     }
 
