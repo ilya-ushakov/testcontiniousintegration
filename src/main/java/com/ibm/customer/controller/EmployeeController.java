@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.concurrent.Callable;
 
 @Controller
-@RequestMapping("/testapp")
+
 public class EmployeeController {
 
 
@@ -26,9 +26,6 @@ public class EmployeeController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String listEmployees(ModelMap map)
     {
-//        map.addAttribute("employee", new EmployeeBean("firstName", "LastName"));
-
-
         map.addAttribute("employee", new EmployeeBean());
         map.addAttribute("employeeList", EmployeeStorage.getInstance().getEmployeeBeans());
 
