@@ -14,9 +14,12 @@ import java.util.concurrent.Callable;
 public class EmployeeController {
 
 
-    @Autowired
-    EmployeeService employeeService;
+    final  EmployeeService employeeService;
 
+    @Autowired
+    public EmployeeController(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
 
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
@@ -59,8 +62,8 @@ public class EmployeeController {
 
             @Override
             public String call() throws Exception {
-                for(EmployeeBean employee: EmployeeStorage.getInstance().getEmployeeBeans()) {
-                    if(employee.equals(employee)) {
+                for(EmployeeBean employee1: EmployeeStorage.getInstance().getEmployeeBeans()) {
+                    if(employee.equals(employee1)) {
                         System.out.println("employee was found  \n" + employee);
                         result.getModel().put("respData", employee);
 
