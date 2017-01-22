@@ -17,7 +17,7 @@ public class EmployeeStorage {
 
     public List<EmployeeBean> getEmployeeBeans() {
         if(employeeBeans.size() == 0){
-            for(int i=1; i<10;i++){
+            for(int i=1; i<12;i++){
                 employeeBeans.add(new EmployeeBean("firstName" + i, "lastName" + i));
             }
         }
